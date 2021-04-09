@@ -1,0 +1,49 @@
+̥<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    
+</head>
+<!-- BOOTSTRAP CSS LINK GOES BELOW -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!-- <link rel="stylesheet" href="proj.css"> -->
+<body class="showcase" background="https://images.unsplash.com/photo-1487284122274-e864e9dec2bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80">
+
+<!-- As a Navbar -->
+<nav class="navbar navbar-light bg-light sticky-top">
+    <span class="navbar-brand mb-0 h1">YelpCamp</span>
+</nav>
+
+    <!-- As a heading -->
+    
+    <div class="container border rounded p-5" style="max-width: 400px" >
+        <h4 class = "text-center m-3 text-dark ">Register as a new user</h4>
+            <form action="/Register" method="POST">
+                <div class="form-group">
+                    <input type="text" name="username" id="username" class="form-control" placeholder="username">
+                </div>
+                <div class="form-group">
+                    <input type="password"  name="password" id="password" class="form-control" placeholder="password">
+                </div>
+                <div>
+                   <input type="submit" id="submit" value="Sign In" class="btn btn-info btn-block ">
+                </div>
+                      
+                     
+            </form>
+  
+    </div>
+
+     <!-- BOOTSTRAP JAVASCRIPT (AND DEPENDENCIES) GO HERE-->
+     <!-- Pay attention to the order! -->
+   
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+    <script src="https://apis.google.com/js/platform.js"></script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,107 @@
+̥<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AboutYou Page</title>
+    
+</head>
+<!-- BOOTSTRAP CSS LINK GOES BELOW -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="/views/proj.css">
+<body class="showcase" background="https://images.unsplash.com/photo-1496421006432-ebcd7f4ec081?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" >
+    
+<!-- As a heading -->
+
+<nav class="navbar navbar-light bg-light sticky-top">
+    <span class="navbar-brand mb-0 h1">YelpCamp</span>
+    <a href="/logout">Logout</a>
+</nav>
+
+  <div class="container">
+    <div class="row align-items-start">
+      <div class="col-2 border border-light" >
+        <!-- placeholder for column -->
+      </div>
+      <div class="col-8 border border-light" >
+       <!-- <span> One of three columns</span>  -->
+       <div class="container">
+        <h1 class="text-left display-4">About You</h1>
+        <!-- <h4>Billing Address</h4> -->
+        <form action="/AboutYou" method="POST">
+            <div class="form-group">
+                <label for="fullname">First Name</label>
+                <input type="text" required id="firstname" name="firstname" class="form-control" placeholder="First Name">
+            </div>
+            <div class="form-group">
+                <label for="username">Last Name</label>
+                <input type="text"  required id="lastname" name="AboutYou[lastname]" class="form-control" placeholder="Last Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email <span class="text-muted">(Optional)</span></label>
+                <input type="email" id="email" name="AboutYou[email]" class="form-control" placeholder="you@example.com">
+            </div>
+            <div class="form-group">
+                <label for="address1">Address 1</label>
+                <input type="text" id="address1" name="AboutYou[address1]" class="form-control" placeholder="1234 Market St.">
+            </div>
+            <div class="form-group">
+                <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+                <input type="text" id="address2" name= "AboutYou[address2]" class="form-control" placeholder="Apartment or Suite">
+            </div>
+            <div class="form-group">
+                <label for="specialNotes">Special Notes <span class="text-muted">(Optional)</span></label>
+                <textarea id="specialNotes" name= "AboutYou[specialNotes]"rows="3" class="form-control"></textarea>
+                <small class="text-muted">Include any special requests you have for us!</small>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="sameShipping"]>
+                <label for="sameShipping" class="custom-control-label">Shipping address is same as billing</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="saveInfo">
+                <label for="saveInfo" class="custom-control-label">Save my info for next time</label>
+            </div>
+            <hr>
+            <h4>Shipping Options</h4>
+            <div class="custom-control custom-radio">
+                <input type="radio" name="shipMethod" class="custom-control-input" id="sameDay">
+                <label for="sameDay" class="custom-control-label">Same Day Shipping</label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="radio" name="shipMethod" class="custom-control-input" id="nextDay">
+                <label for="nextDay" class="custom-control-label">Next Dat Shipping</label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="radio" name="shipMethod" class="custom-control-input" id="slowShip">
+                <label for="slowShip" class="custom-control-label">3-5 Business Days</label>
+            </div>
+            <input type="submit" value="Save" class="btn btn-primary btn-sm btn-block my-3">
+            <button class="btn btn-primary btn-sm btn-block my-3">next</button>
+        </form>
+    </div>
+
+      </div>
+      <div class="col-2 border border-light">
+        <!-- Place holder for column -->
+      </div>
+    </div>
+</div>
+
+     <!-- BOOTSTRAP JAVASCRIPT (AND DEPENDENCIES) GO HERE-->
+     <!-- Pay attention to the order! -->
+   
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+    <script src="https://apis.google.com/js/platform.js"></script>
+    
+    
+    
+</body>
+</html>
+
+
+
+
+
